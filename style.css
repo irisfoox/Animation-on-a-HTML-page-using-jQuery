@@ -1,0 +1,16 @@
+.square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: blueviolet;
+}
+.divMain{
+    height: 350px;
+    width: 50%;
+}
+#tree{
+    position: absolute;
+    top: 550px;
+    right: 0px;
+}

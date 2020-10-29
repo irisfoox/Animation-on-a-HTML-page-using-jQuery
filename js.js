@@ -1,0 +1,40 @@
+$("#b1").click(
+  function (){
+      $(".square").show("fast","linear",function(){
+          $(this).text("well done")
+      })
+  }
+)
+$("#b2").click(
+    function(){
+       $(".square").hide("slow","swing")
+    }
+)
+$("#b3").click(
+    function(){
+        $(".square").toggle()
+    }
+)
+$("#form").hover(
+    function(){
+        $(this).fadeTo(1000,0.3).fadeTo(1000,0.3).fadeTo(1000,0.3)
+        $(this).slideDown()
+        $(this).animate({opacity: "1"},2000,"linear")
+    }
+)
+$("#big").click(
+    function(){
+        $("#tree").animate({height:"+=250px",width:"+=250px"},1000,"linear")
+    }
+)
+$("#move").click(
+    function(){
+        $("#tree").animate({right:"100%"},3000,"linear")
+    }
+)
+$("#reset").click(
+    function(){
+        $("#tree").animate({height:"300px",width:"300px"},2000,"linear")
+        $("#tree").animate({right:"0px"},1000,"linear")
+    }
+)
